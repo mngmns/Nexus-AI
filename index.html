@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>AI Optimization Training & Certification | Learn Artificial Intelligence for Business | AI Nexus Academy</title>
+  <meta name="description" content="Master artificial intelligence for the modern workplace. Earn your AI Optimization Certificate and future-proof your career or business. Industry-recognized certification. Enroll today." />
+  <meta name="keywords" content="AI training, artificial intelligence course, AI certification, AI for business, learn AI, AI optimization, AI employment skills, machine learning training, ChatGPT training, AI tools for work, AI productivity course, artificial intelligence certification online, best AI course, AI skills for employees, business AI training, generative AI course, AI workforce training, AI upskilling, AI for beginners, professional AI certification, AI course online, AI training program" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="AI Nexus Academy" />
+  <link rel="canonical" href="https://yourdomain.com/ai-training" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Optimization Certification | AI Nexus Academy" />
+  <meta property="og:description" content="The #1 place to learn artificial intelligence for business. Get certified. Get hired. Get ahead." />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Optimization for Employment Certification",
+    "description": "A comprehensive online course teaching professionals and businesses how to leverage artificial intelligence tools for productivity, decision-making, and career advancement. Includes final exam and industry-recognized certification.",
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Nexus Academy",
+      "sameAs": "https://yourdomain.com"
+    },
+    "educationalCredentialAwarded": "AI Optimization Certificate",
+    "courseMode": "online",
+    "offers": {
+      "@type": "Offer",
+      "category": "Paid"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #04060f;
+      --surface: #0c1120;
+      --card: #101828;
+      --accent: #00e5ff;
+      --accent2: #a259ff;
+      --gold: #f5c842;
+      --text: #e8eaf6;
+      --muted: #7986a8;
+      --border: rgba(0,229,255,0.12);
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ---- HERO TWO-COLUMN ---- */
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-video-frame {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+      background: var(--card);
+      box-shadow: 0 0 60px rgba(0,229,255,0.1), 0 0 120px rgba(162,89,255,0.06);
+      animation: fadeUp 1.1s 0.2s ease both;
+    }
+
+    .hero-video-frame::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(0,229,255,0.3), rgba(162,89,255,0.2), transparent 60%);
+      z-index: -1;
+    }
+
+    .video-top-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-r { background: #ff5f57; }
+    .dot-y { background: #febc2e; }
+    .dot-g { background: #28c840; }
+
+    .video-placeholder {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      background: linear-gradient(135deg, #0c1120, #101828);
+    }
+
+    .video-placeholder iframe,
+    .video-placeholder .video-inner {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: var(--muted);
+    }
+
+    .play-btn {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: rgba(0,229,255,0.15);
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      animation: pulse-play 2.5s infinite;
+    }
+
+    @keyframes pulse-play {
+      0%,100% { box-shadow: 0 0 0 0 rgba(0,229,255,0.4); }
+      50%      { box-shadow: 0 0 0 16px rgba(0,229,255,0); }
+    }
+
+    .play-btn:hover {
+      background: var(--accent);
+      color: #04060f;
+      transform: scale(1.08);
+    }
+
+    .video-label {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .video-caption {
+      padding: 14px 20px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid var(--border);
+    }
+
+    .video-caption .live-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 900px) {
+      .hero-layout { grid-template-columns: 1fr; gap: 48px; }
+      .hero { padding-top: 100px; }
+    }
+
+    /* ---- GRID NOISE BACKGROUND ---- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 5%;
+      background: rgba(4,6,15,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--accent2); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+
+    nav ul a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--accent); }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #04060f;
+    }
+
+    .btn-primary:hover {
+      background: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0,229,255,0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+
+    .btn-outline:hover {
+      background: var(--accent);
+      color: #04060f;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #04060f;
+      font-size: 1.1rem;
+      padding: 18px 48px;
+    }
+
+    .btn-gold:hover {
+      background: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 0 40px rgba(245,200,66,0.5);
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 5% 80px 5%;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,229,255,0.12) 0%, transparent 70%);
+      top: -100px;
+      right: -100px;
+      pointer-events: none;
+    }
+
+    .hero-glow2 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(162,89,255,0.1) 0%, transparent 70%);
+      bottom: -50px;
+      left: 20%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      position: relative;
+      z-index: 2;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,229,255,0.1);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero-tag::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.4; transform: scale(1.5); }
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 1;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+    }
+
+    h1 .line1 { color: var(--text); display: block; }
+    h1 .line2 { color: var(--accent); display: block; }
+    h1 .line3 { color: var(--accent2); display: block; }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 580px;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .hero-stat .num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+    }
+
+    .hero-stat .label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* ---- SECTIONS ---- */
+    section {
+      position: relative;
+      z-index: 1;
+      padding: 100px 5%;
+    }
+
+    .section-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      letter-spacing: 2px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    /* ---- WHY AI CARDS ---- */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 64px;
+    }
+
+    .why-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 30px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .why-card:hover { transform: translateY(-6px); border-color: rgba(0,229,255,0.35); }
+    .why-card:hover::before { opacity: 1; }
+
+    .why-icon {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+    .why-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+
+    /* ---- COURSE OUTLINE ---- */
+    .course-section { background: var(--surface); }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 64px;
+    }
+
+    .module {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 28px 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: border-color 0.3s;
+    }
+
+    .module:hover { border-color: rgba(162,89,255,0.4); }
+
+    .module-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--accent2);
+      opacity: 0.5;
+      min-width: 50px;
+      line-height: 1;
+    }
+
+    .module h4 {
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .module p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
+    /* ---- CERT SECTION ---- */
+    .cert-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .cert-section { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    .cert-badge {
+      background: linear-gradient(135deg, #101828, #0c1120);
+      border: 2px solid var(--gold);
+      border-radius: 16px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(245,200,66,0.12);
+    }
+
+    .cert-badge::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--gold), var(--accent2), var(--accent));
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    .cert-icon { font-size: 4rem; margin-bottom: 16px; }
+
+    .cert-badge h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .cert-badge p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .cert-badge .seal {
+      display: inline-block;
+      margin-top: 24px;
+      background: rgba(245,200,66,0.1);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .cert-text h2 { margin-bottom: 24px; }
+
+    .cert-points {
+      list-style: none;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .cert-points li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .cert-points li::before {
+      content: '✓';
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0,229,255,0.12);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+    }
+
+    /* ---- WHO THIS IS FOR ---- */
+    .audience-section { background: var(--surface); }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 64px;
+    }
+
+    .audience-card {
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .audience-card:hover {
+      border-color: rgba(0,229,255,0.35);
+      transform: translateY(-4px);
+    }
+
+    .audience-card .ico { font-size: 2.8rem; margin-bottom: 16px; }
+    .audience-card h4 { font-weight: 700; margin-bottom: 8px; font-size: 1rem; }
+    .audience-card p { color: var(--muted); font-size: 0.87rem; line-height: 1.65; }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 64px;
+    }
+
+    .testimonial {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 30px;
+    }
+
+    .stars { color: var(--gold); margin-bottom: 16px; font-size: 1.1rem; }
+
+    .testimonial p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #04060f;
+    }
+
+    .author-name { font-weight: 700; font-size: 0.9rem; }
+    .author-role { color: var(--muted); font-size: 0.8rem; }
+
+    /* ---- CTA ---- */
+    .cta-section {
+      text-align: center;
+      padding: 120px 5%;
+      background: var(--surface);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,229,255,0.07) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .cta-section h2 { margin-bottom: 20px; }
+    .cta-section p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 520px;
+      margin: 0 auto 48px;
+      line-height: 1.8;
+    }
+
+    .price-tag {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    .price-tag .amount {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    .price-tag .currency { color: var(--muted); font-size: 1.2rem; }
+    .price-tag .period { color: var(--muted); font-size: 0.9rem; }
+
+    .guarantee {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .guarantee span { color: var(--accent); font-weight: 600; }
+
+    /* ---- FAQ ---- */
+    .faq-list {
+      max-width: 720px;
+      margin: 64px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      padding: 24px 28px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-q .arrow {
+      color: var(--accent);
+      font-size: 1.4rem;
+      transition: transform 0.3s;
+      min-width: 24px;
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      padding: 0 28px;
+    }
+
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 28px 24px; }
+    .faq-item.open .arrow { transform: rotate(45deg); }
+
+    /* ---- FOOTER ---- */
+    footer {
+      text-align: center;
+      padding: 60px 5% 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer .logo { font-size: 1.6rem; display: block; margin-bottom: 16px; }
+    footer p { line-height: 1.8; max-width: 500px; margin: 0 auto 24px; }
+    footer .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+    footer .footer-links a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    footer .footer-links a:hover { color: var(--accent); }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      h1 { font-size: 3.2rem; }
+      .hero-stats { gap: 28px; }
+      section { padding: 72px 5%; }
+    }
+
+    /* ---- SCROLL ANIMATION ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">AI <span>NEXUS</span> ACADEMY</a>
+    <ul>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#enroll" class="btn btn-primary">Enroll Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-layout">
+
+      <!-- LEFT: TEXT -->
+      <div class="hero-inner">
+        <div class="hero-tag">The #1 Place To Learn AI</div>
+        <h1>
+          <span class="line1">MASTER</span>
+          <span class="line2">ARTIFICIAL</span>
+          <span class="line3">INTELLIGENCE.</span>
+        </h1>
+        <p class="hero-sub">
+          The world's most in-demand skill is now within reach. Our industry-leading AI Optimization course trains professionals, entrepreneurs, and businesses to harness the full power of artificial intelligence — and earn a recognized certification that proves it.
+        </p>
+        <div class="hero-ctas">
+          <a href="#enroll" class="btn btn-primary">Start Your AI Journey →</a>
+          <a href="#course" class="btn btn-outline">View Curriculum</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">97%</div>
+            <div class="label">Completion Rate</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">5,000+</div>
+            <div class="label">Students Certified</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">3×</div>
+            <div class="label">Productivity Gain</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">100%</div>
+            <div class="label">Self-Paced Online</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: VIDEO FRAME -->
+      <div class="hero-video-frame">
+        <div class="video-top-bar">
+          <div class="dot dot-r"></div>
+          <div class="dot dot-y"></div>
+          <div class="dot dot-g"></div>
+          <span style="font-size:0.78rem;color:var(--muted);margin-left:8px;letter-spacing:1px;">AI NEXUS ACADEMY — INTRO</span>
+        </div>
+        <div class="video-placeholder">
+          <!-- 
+            TO ADD YOUR VIDEO:
+            Replace the .video-inner div below with a YouTube embed like:
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            Or a Vimeo embed:
+            <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          -->
+          <div class="video-inner">
+            <div class="play-btn">▶</div>
+            <div class="video-label">Watch Course Overview</div>
+          </div>
+        </div>
+        <div class="video-caption">
+          <div class="live-dot"></div>
+          <span>Paste your YouTube or Vimeo embed URL to activate this video</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- WHY AI -->
+  <section id="why">
+    <div class="section-tag">Why This Matters</div>
+    <h2>AI IS THE NEW<br>BUSINESS ADVANTAGE</h2>
+    <p class="section-sub">Companies that adopt artificial intelligence are outpacing competitors by a margin that only grows each year. The question isn't whether to use AI — it's how fast you learn it.</p>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🚀</div>
+        <h3>Exponential Productivity</h3>
+        <p>Businesses using AI tools report 30–50% gains in productivity. Learn to automate repetitive tasks, accelerate decision-making, and free your team for high-impact work.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💼</div>
+        <h3>In-Demand Skills</h3>
+        <p>AI literacy is now the #1 most requested skill in job postings globally. Candidates with verified AI certification command higher salaries and more career options.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🧠</div>
+        <h3>Smarter Decisions</h3>
+        <p>Learn to use AI tools for data analysis, forecasting, and market intelligence. Make decisions backed by machine-powered insights, not guesswork.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💰</div>
+        <h3>Strong ROI for Businesses</h3>
+        <p>Every dollar invested in AI training generates measurable returns through cost savings, faster delivery, and competitive differentiation. This is the best investment your business can make.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🌐</div>
+        <h3>Future-Proof Your Career</h3>
+        <p>The AI revolution is not slowing down. Professionals who upskill now will lead the workforce of tomorrow. Don't get left behind — get certified.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">⚡</div>
+        <h3>Immediate Application</h3>
+        <p>Every module is built for real-world use. From day one, you'll apply AI tools directly to your work — no fluff, no theory overload. Just practical skills that deliver results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE MODULES -->
+  <section id="course" class="course-section">
+    <div class="section-tag">The Curriculum</div>
+    <h2>EVERYTHING YOU NEED<br>TO KNOW ABOUT AI</h2>
+    <p class="section-sub">A structured, progressive learning path from AI fundamentals to advanced optimization strategies — built for busy professionals.</p>
+    <div class="modules">
+      <div class="module reveal">
+        <div class="module-num">01</div>
+        <div>
+          <h4>AI Foundations & the Modern Landscape</h4>
+          <p>Understand what AI is, how it works, and the key tools reshaping every industry. Demystify machine learning, generative AI, and large language models.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">02</div>
+        <div>
+          <h4>Mastering AI Productivity Tools</h4>
+          <p>Hands-on training with ChatGPT, Claude, Gemini, Copilot, and more. Learn prompt engineering, tool selection, and integration into daily workflows.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">03</div>
+        <div>
+          <h4>AI for Business Operations</h4>
+          <p>Apply AI to marketing, customer service, sales, HR, and project management. Automate processes that drain time and resources.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">04</div>
+        <div>
+          <h4>Data Literacy & AI Analysis</h4>
+          <p>Learn to feed, interpret, and act on AI-generated insights. Turn raw data into strategic business intelligence without needing a data science degree.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">05</div>
+        <div>
+          <h4>Advanced Prompt Engineering</h4>
+          <p>Go beyond basic prompts. Master chain-of-thought techniques, role prompting, and structured output methods that unlock the full potential of AI models.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">06</div>
+        <div>
+          <h4>AI Ethics, Risk & Governance</h4>
+          <p>Understand bias, data privacy, compliance, and responsible AI use. Navigate legal and ethical considerations confidently as an AI-empowered professional.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">07</div>
+        <div>
+          <h4>Building an AI-First Strategy</h4>
+          <p>Design a roadmap for AI adoption across your organisation or team. Learn to pitch AI initiatives, calculate ROI, and lead transformation projects.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <div class="module-num">08</div>
+        <div>
+          <h4>Final Exam & Certification</h4>
+          <p>Demonstrate your AI mastery with our comprehensive exam. Pass and earn your internationally recognised AI Optimization Certificate — proof of real expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION -->
+  <section id="cert">
+    <div class="cert-section">
+      <div class="cert-badge reveal">
+        <div class="cert-icon">🏆</div>
+        <h3>AI OPTIMIZATION<br>CERTIFICATE</h3>
+        <p>Issued upon successful completion of the final exam. Industry-recognised proof of your AI proficiency for employers and clients.</p>
+        <div class="seal">AI Nexus Certified 2025</div>
+      </div>
+      <div class="cert-text reveal">
+        <div class="section-tag">Your Credential</div>
+        <h2>EARN A CERT THAT<br>EMPLOYERS NOTICE</h2>
+        <p class="section-sub">Our certification is built around real-world AI skills that employers and clients actively look for — making it one of the highest-value credentials you can add to your resume or business profile.</p>
+        <ul class="cert-points">
+          <li>Shareable digital badge for LinkedIn, resumes & portfolios</li>
+          <li>Recognised by businesses across tech, finance, healthcare & more</li>
+          <li>Demonstrates hands-on AI proficiency, not just theory</li>
+          <li>Prove you can optimise workflows using the latest AI tools</li>
+          <li>Stand out in a competitive job market</li>
+          <li>Backed by AIEdge Academy's industry reputation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IS THIS FOR -->
+  <section class="audience-section">
+    <div style="text-align:center">
+      <div class="section-tag">Who Should Enroll</div>
+      <h2>BUILT FOR ANYONE<br>READY TO GROW</h2>
+      <p class="section-sub" style="margin: 0 auto;">Whether you're starting from zero or looking to formalise your AI skills, this course meets you where you are.</p>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <div class="ico">🏢</div>
+        <h4>Business Owners</h4>
+        <p>Cut costs, scale faster, and outcompete rivals using AI automation and intelligence tools across every business function.</p>
+      </div>
+      <div class="audience-card reveal">
+        <div class="ico">👔</div>
+        <h4>Job Seekers</h4>
+        <p>Add a certified AI credential to your CV and unlock higher-paying roles in any industry. AI skills are the #1 career differentiator.</p>
+      </div>
+      <div class="audience-card reveal">
+        <div class="ico">📈</div>
+        <h4>Marketing & Sales Pros</h4>
+        <p>Use AI to create content at scale, automate campaigns, personalise outreach, and analyse performance like never before.</p>
+      </div>
+      <div class="audience-card reveal">
+        <div class="ico">🧑‍💼</div>
+        <h4>Managers & Team Leaders</h4>
+        <p>Lead your team into the AI era. Learn how to identify automation opportunities and build an AI-ready culture.</p>
+      </div>
+      <div class="audience-card reveal">
+        <div class="ico">🎓</div>
+        <h4>Students & Graduates</h4>
+        <p>Start your career with an edge. AI certification signals forward-thinking skills that employers are desperately seeking.</p>
+      </div>
+      <div class="audience-card reveal">
+        <div class="ico">🛠️</div>
+        <h4>Freelancers & Creatives</h4>
+        <p>Deliver more to clients in less time. AI tools supercharge writing, design, research, and project delivery at every scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div style="text-align:center">
+      <div class="section-tag">Student Results</div>
+      <h2>REAL PEOPLE.<br>REAL RESULTS.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I went from knowing nothing about AI to using it every single day in my business. Within two months of completing the course I saved over 15 hours a week on admin alone."</p>
+        <div class="testimonial-author">
+          <div class="avatar">JM</div>
+          <div>
+            <div class="author-name">James M.</div>
+            <div class="author-role">Small Business Owner</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I added the AI Optimization Certificate to my LinkedIn and within three weeks I had two job interviews specifically because of it. This course pays for itself many times over."</p>
+        <div class="testimonial-author">
+          <div class="avatar">SR</div>
+          <div>
+            <div class="author-name">Sarah R.</div>
+            <div class="author-role">Marketing Manager</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Our team went through this program together. Productivity is up, morale is up, and we're delivering projects 40% faster. Best training investment we've ever made."</p>
+        <div class="testimonial-author">
+          <div class="avatar">DK</div>
+          <div>
+            <div class="author-name">David K.</div>
+            <div class="author-role">Operations Director</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / ENROLL -->
+  <section id="enroll" class="cta-section">
+    <div class="section-tag">Enroll Today</div>
+    <h2>YOUR AI JOURNEY<br>STARTS NOW</h2>
+    <p>Join thousands of professionals who've already transformed their careers and businesses with AI Optimization certification. The best time to start was yesterday. The second best time is right now.</p>
+    <div class="price-tag">
+      <span class="currency">$</span>
+      <span class="amount">397</span>
+      <span class="period">one-time • lifetime access</span>
+    </div>
+    <br>
+    <a href="#" class="btn btn-gold">Enroll & Get Certified →</a>
+    <div class="guarantee">
+      <span>✓ 30-Day Money-Back Guarantee</span> &nbsp;·&nbsp;
+      <span>✓ Lifetime Access</span> &nbsp;·&nbsp;
+      <span>✓ Certificate Included</span>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div style="text-align:center">
+      <div class="section-tag">FAQ</div>
+      <h2>COMMON QUESTIONS</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Do I need any prior experience with AI? <span class="arrow">+</span></button>
+        <div class="faq-a">No experience required. The course starts from the ground up and progressively builds to advanced strategies. If you can use a smartphone, you can start this course.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does the course take to complete? <span class="arrow">+</span></button>
+        <div class="faq-a">Most students complete the course in 4–6 weeks studying part-time (3–5 hours per week). You have lifetime access, so you can go at your own pace with no pressure.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is included in the final exam and certification? <span class="arrow">+</span></button>
+        <div class="faq-a">The final exam tests your knowledge across all modules with multiple-choice and applied scenario questions. Pass with 75% or higher and you instantly receive your digital AI Optimization Certificate.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is the certification recognised by employers? <span class="arrow">+</span></button>
+        <div class="faq-a">Yes. Our certification is designed to demonstrate practical AI skills that employers actively seek. You'll receive a shareable digital badge for LinkedIn and your resume, verified by AIEdge Academy.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can my whole team or business enroll? <span class="arrow">+</span></button>
+        <div class="faq-a">Absolutely. We offer team packages and bulk enrollment options for businesses. Contact us for group pricing and bespoke training solutions tailored to your industry.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I'm not satisfied with the course? <span class="arrow">+</span></button>
+        <div class="faq-a">We offer a full 30-day money-back guarantee, no questions asked. We're that confident you'll love the course — but if it's not right for you, we'll refund 100% of your investment.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="logo">AI <span style="color:var(--accent2)">NEXUS</span> ACADEMY</a>
+    <p>The #1 place to learn artificial intelligence for employment and business. Get certified. Get ahead. Get results.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Affiliate Program</a>
+      <a href="courses.html">Courses</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+    </div>
+    <p style="font-size:0.8rem">© 2025 AI Nexus Academy. All rights reserved. | AI Training | AI Certification | AI for Business | Artificial Intelligence Course Online</p>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
